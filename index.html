@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <title>Document</title>
+    <script type="text/javascript">
+    function chgimg(x)
+    {
+        i1.src=x;
+    }
+    </script>
 </head>
 <body>
-    <ul>
-        <li><a href="The Book Series">The Book Series</a></li>
-        <li><a href="Testimonials">Testimonials</a></li>
-        <li><a href="The Author">The Author</a></li>
-        <li><a href="Free Resources">Free Resources</a></li>
-    </ul>
-    <h1>You Dont Know JavaScript</h1>
-    <div class = "row">
-        <div class="column" style="background-color: white; text-align :center;">
-            <h2>...Image to be uploaded...</h2>
-            <img src="javascriptbook.png" alt="javascriptbooks" wiidth="500" height="333">
-        </div>
-        <div class="column" style="background-color: white; text-align :center;">
-            <h3>Don't just drift through JavaScript</h3>
-            <br>
-            <h3>Understand how JavaScript works</h3>
-            <br>
-            <h3>Start your journey through the bumpy side of JavaSript</h3>
-            <br>
-            <button id="mybutton" class="button1">Order Your Copy Now</button>
-        </div>
+   <div class="decor">
+        <marquee behaviour="scroll" direction="right" loop="infinite">
+          <img src="decoration.png" width="500" height="100" alt="celebration" />
+          <img src="decoration.png" width="500" height="100" alt="celebration" />
+          <img src="decoration.png" width="500" height="100" alt="celebration" />
+        </marquee>
     </div>
-    <script type="text/Javascript"> document.getElementById("mybutton").onclick = function() {
-        location.href = "https://www.google.com/amp/s/www.codingninjas.com/blog/2020/05/11/best-javascript-books/";
-    };
-    </script>
-    
-    <div class="Footer">
-        <div class="end" style="text-align: center;">
-            <h3>The first ebook in the book series is absolitely free.</h3>
+    <div class="row">
+        <div class="col1">
+            <img id="i1" src="l1.png" alt="slow moves" width="500" height="400">
+            <h1 class="first">TCS Team Welcomes Stephan Fanenbruck</h1>
+            <h2 class="second">CLICK THE BUTTON TO LIGHT THE KUTHUVILLAKU</h2>
             <br>
-            <button id="endbutton" class="endbutton">Find Out More About This Offer</button>
+            <input type="button" value="STEPHAN" onclick="chgimg('l2.gif')" />
+            <input type="button" value="SHAILESH" onclick="chgimg('l3.gif')" />
+            <input type="button" value="UMA" onclick="chgimg('l4.gif')" />
+            <input type="reset" value="RESET" onclick="chgimg('l1.png')" />
         </div>
+        <!-- <div class="col2"> -->
+            <!-- <img src="petals.gif" alt="slow moves" width="700" height="350"> -->
+        <div class ="slideshow">
+            <marquee behaviour="scroll" direction="right" loop="infinite">
+                <img src="palace.jpg" width="400" height="400">
+                <img src="char minar.jpg" width="400" height="400">
+                <img src="gateway.jpg" width="400" height="400">
+                <img src="brown.jpg" width="400" height="400">
+                <img src="humayun.jpg" width="400" height="400">
+                <img src="kerala.jpg" width="400" height="400">
+                <img src="lotustemple.jpg" width="400" height="400"> 
+                <img src="taj mahal.jpg" width="400" height="400">
+                <img src="victoria.jpg" width="400" height="400">
+            </marquee>
+        </div>  
     </div>
-    <script type="text/Javascript"> document.getElementById("endbutton").onclick = function() {
-        location.href = "https://hackr.io/blog/javascript-books/";
-    };
-    </script>
 </body>
 </html>
 
